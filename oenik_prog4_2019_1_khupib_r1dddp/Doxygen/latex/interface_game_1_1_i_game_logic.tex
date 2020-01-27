@@ -1,0 +1,235 @@
+\hypertarget{interface_game_1_1_i_game_logic}{}\section{Game.\+I\+Game\+Logic Interface Reference}
+\label{interface_game_1_1_i_game_logic}\index{Game.IGameLogic@{Game.IGameLogic}}
+
+
+Interface \mbox{\hyperlink{interface_game_1_1_i_game_logic}{I\+Game\+Logic}}.  
+
+
+Inheritance diagram for Game.\+I\+Game\+Logic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_game_1_1_i_game_logic}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_game_1_1_i_game_logic_abae3146afb71b9b144c13b189a26fb17}{Move\+Left}} (\mbox{\hyperlink{class_game_1_1_tile}{Tile}}\mbox{[},\mbox{]} grid)
+\begin{DoxyCompactList}\small\item\em Move\+Left function. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_game_1_1_i_game_logic_a7ae3b1cdeb4f6eb82ee6298bdaa05b9e}{Move\+Right}} (\mbox{\hyperlink{class_game_1_1_tile}{Tile}}\mbox{[},\mbox{]} grid)
+\begin{DoxyCompactList}\small\item\em Move\+Right function. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_game_1_1_i_game_logic_a13ef4621073f1ad055c2c62a92411f03}{Move\+Up}} (\mbox{\hyperlink{class_game_1_1_tile}{Tile}}\mbox{[},\mbox{]} grid)
+\begin{DoxyCompactList}\small\item\em Move\+Up function. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_game_1_1_i_game_logic_ae4106eb97e72a42e76fd0d286fd7b10b}{Move\+Down}} (\mbox{\hyperlink{class_game_1_1_tile}{Tile}}\mbox{[},\mbox{]} grid)
+\begin{DoxyCompactList}\small\item\em Move\+Down function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_game_1_1_i_game_logic_a1a1127f02ceb601a80694ee69e25c0c7}{Increase\+Score}} (\mbox{\hyperlink{class_game_1_1_tile}{Tile}} tile)
+\begin{DoxyCompactList}\small\item\em change score when tiles are merged . \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_game_1_1_tile}{Tile}} $>$ \mbox{\hyperlink{interface_game_1_1_i_game_logic_a9453d57d56d6af99aaa89d2b946430f3}{List\+Of\+Empty\+Tiles}} (\mbox{\hyperlink{class_game_1_1_tile}{Tile}}\mbox{[},\mbox{]} grid)
+\begin{DoxyCompactList}\small\item\em List\+Of\+Empty\+Tiles function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_game_1_1_i_game_logic_af4c46a6bc7485d51c95c3eaad66daddf}{Place\+New\+Tile}} (\mbox{\hyperlink{class_game_1_1_tile}{Tile}}\mbox{[},\mbox{]} grid)
+\begin{DoxyCompactList}\small\item\em after every move, a new tile is placed randomly. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_game_1_1_i_game_logic_adad0be2f1112c86b5a0fcaf9862e5947}{Check\+Game\+Over}} (\mbox{\hyperlink{class_game_1_1_tile}{Tile}}\mbox{[},\mbox{]} grid)
+\begin{DoxyCompactList}\small\item\em Check\+Game\+Over function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_game_1_1_i_game_logic_a87f5edc4698d50e56c64e3b822ed7ab7}{Open\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em menu functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface \mbox{\hyperlink{interface_game_1_1_i_game_logic}{I\+Game\+Logic}}. 
+
+
+
+Definition at line 12 of file I\+Game\+Logic.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_game_1_1_i_game_logic_adad0be2f1112c86b5a0fcaf9862e5947}\label{interface_game_1_1_i_game_logic_adad0be2f1112c86b5a0fcaf9862e5947}} 
+\index{Game.IGameLogic@{Game.IGameLogic}!CheckGameOver@{CheckGameOver}}
+\index{CheckGameOver@{CheckGameOver}!Game.IGameLogic@{Game.IGameLogic}}
+\subsubsection{\texorpdfstring{CheckGameOver()}{CheckGameOver()}}
+{\footnotesize\ttfamily bool Game.\+I\+Game\+Logic.\+Check\+Game\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_tile}{Tile}}}]{grid\mbox{[},\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Check\+Game\+Over function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & 2D array of tiles.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool whether change happened or not.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_game_logic_a11500e039be202e200db57b10afd7261}{Game.\+Game\+Logic}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_game_logic_a1a1127f02ceb601a80694ee69e25c0c7}\label{interface_game_1_1_i_game_logic_a1a1127f02ceb601a80694ee69e25c0c7}} 
+\index{Game.IGameLogic@{Game.IGameLogic}!IncreaseScore@{IncreaseScore}}
+\index{IncreaseScore@{IncreaseScore}!Game.IGameLogic@{Game.IGameLogic}}
+\subsubsection{\texorpdfstring{IncreaseScore()}{IncreaseScore()}}
+{\footnotesize\ttfamily void Game.\+I\+Game\+Logic.\+Increase\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_tile}{Tile}}}]{tile }\end{DoxyParamCaption})}
+
+
+
+change score when tiles are merged . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & \mbox{\hyperlink{class_game_1_1_tile}{Tile}} whose value is used to increase the score.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_game_logic_acfdb89870903c5855e4aeb437e9e9672}{Game.\+Game\+Logic}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_game_logic_a9453d57d56d6af99aaa89d2b946430f3}\label{interface_game_1_1_i_game_logic_a9453d57d56d6af99aaa89d2b946430f3}} 
+\index{Game.IGameLogic@{Game.IGameLogic}!ListOfEmptyTiles@{ListOfEmptyTiles}}
+\index{ListOfEmptyTiles@{ListOfEmptyTiles}!Game.IGameLogic@{Game.IGameLogic}}
+\subsubsection{\texorpdfstring{ListOfEmptyTiles()}{ListOfEmptyTiles()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_game_1_1_tile}{Tile}}$>$ Game.\+I\+Game\+Logic.\+List\+Of\+Empty\+Tiles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_tile}{Tile}}}]{grid\mbox{[},\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+List\+Of\+Empty\+Tiles function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & 2D array of tiles.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of empty tiles.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_game_logic_a9c5ad5f88426ff3f53252c41611b5ab2}{Game.\+Game\+Logic}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_game_logic_ae4106eb97e72a42e76fd0d286fd7b10b}\label{interface_game_1_1_i_game_logic_ae4106eb97e72a42e76fd0d286fd7b10b}} 
+\index{Game.IGameLogic@{Game.IGameLogic}!MoveDown@{MoveDown}}
+\index{MoveDown@{MoveDown}!Game.IGameLogic@{Game.IGameLogic}}
+\subsubsection{\texorpdfstring{MoveDown()}{MoveDown()}}
+{\footnotesize\ttfamily bool Game.\+I\+Game\+Logic.\+Move\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_tile}{Tile}}}]{grid\mbox{[},\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Move\+Down function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & 2D array of tiles.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool whether change happened or not.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_game_logic_ae7032504eaee895fdce17c64490c0a52}{Game.\+Game\+Logic}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_game_logic_abae3146afb71b9b144c13b189a26fb17}\label{interface_game_1_1_i_game_logic_abae3146afb71b9b144c13b189a26fb17}} 
+\index{Game.IGameLogic@{Game.IGameLogic}!MoveLeft@{MoveLeft}}
+\index{MoveLeft@{MoveLeft}!Game.IGameLogic@{Game.IGameLogic}}
+\subsubsection{\texorpdfstring{MoveLeft()}{MoveLeft()}}
+{\footnotesize\ttfamily bool Game.\+I\+Game\+Logic.\+Move\+Left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_tile}{Tile}}}]{grid\mbox{[},\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Move\+Left function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & 2D array of tiles.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool whether change happened or not.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_game_logic_a641318ffaa89d83863f56895f09b50c5}{Game.\+Game\+Logic}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_game_logic_a7ae3b1cdeb4f6eb82ee6298bdaa05b9e}\label{interface_game_1_1_i_game_logic_a7ae3b1cdeb4f6eb82ee6298bdaa05b9e}} 
+\index{Game.IGameLogic@{Game.IGameLogic}!MoveRight@{MoveRight}}
+\index{MoveRight@{MoveRight}!Game.IGameLogic@{Game.IGameLogic}}
+\subsubsection{\texorpdfstring{MoveRight()}{MoveRight()}}
+{\footnotesize\ttfamily bool Game.\+I\+Game\+Logic.\+Move\+Right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_tile}{Tile}}}]{grid\mbox{[},\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Move\+Right function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & 2D array of tiles.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool whether change happened or not.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_game_logic_ad35edbf38f3151d792d4c4cce51c4a2b}{Game.\+Game\+Logic}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_game_logic_a13ef4621073f1ad055c2c62a92411f03}\label{interface_game_1_1_i_game_logic_a13ef4621073f1ad055c2c62a92411f03}} 
+\index{Game.IGameLogic@{Game.IGameLogic}!MoveUp@{MoveUp}}
+\index{MoveUp@{MoveUp}!Game.IGameLogic@{Game.IGameLogic}}
+\subsubsection{\texorpdfstring{MoveUp()}{MoveUp()}}
+{\footnotesize\ttfamily bool Game.\+I\+Game\+Logic.\+Move\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_tile}{Tile}}}]{grid\mbox{[},\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Move\+Up function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & 2D array of tiles.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool whether change happened or not.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_game_logic_af397bfc00de61436b0ec1f5a837bc61c}{Game.\+Game\+Logic}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_game_logic_a87f5edc4698d50e56c64e3b822ed7ab7}\label{interface_game_1_1_i_game_logic_a87f5edc4698d50e56c64e3b822ed7ab7}} 
+\index{Game.IGameLogic@{Game.IGameLogic}!OpenMenu@{OpenMenu}}
+\index{OpenMenu@{OpenMenu}!Game.IGameLogic@{Game.IGameLogic}}
+\subsubsection{\texorpdfstring{OpenMenu()}{OpenMenu()}}
+{\footnotesize\ttfamily void Game.\+I\+Game\+Logic.\+Open\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+menu functions. 
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_game_logic_a9d04ec4a8a2cc27d098ae6169beb2cf9}{Game.\+Game\+Logic}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_game_logic_af4c46a6bc7485d51c95c3eaad66daddf}\label{interface_game_1_1_i_game_logic_af4c46a6bc7485d51c95c3eaad66daddf}} 
+\index{Game.IGameLogic@{Game.IGameLogic}!PlaceNewTile@{PlaceNewTile}}
+\index{PlaceNewTile@{PlaceNewTile}!Game.IGameLogic@{Game.IGameLogic}}
+\subsubsection{\texorpdfstring{PlaceNewTile()}{PlaceNewTile()}}
+{\footnotesize\ttfamily void Game.\+I\+Game\+Logic.\+Place\+New\+Tile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_tile}{Tile}}}]{grid\mbox{[},\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+after every move, a new tile is placed randomly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & 2D array of tiles.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_game_logic_af75ecbf1983cfad3a84a6ccbe5c9808f}{Game.\+Game\+Logic}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+oenik\+\_\+prog4\+\_\+2019\+\_\+1\+\_\+khupib\+\_\+r1dddp/\+Interfaces/I\+Game\+Logic.\+cs\end{DoxyCompactItemize}

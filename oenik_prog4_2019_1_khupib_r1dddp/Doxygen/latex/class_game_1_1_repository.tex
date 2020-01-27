@@ -1,0 +1,214 @@
+\hypertarget{class_game_1_1_repository}{}\section{Game.\+Repository$<$ T $>$ Class Template Reference}
+\label{class_game_1_1_repository}\index{Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}}
+
+
+\mbox{\hyperlink{class_game_1_1_repository}{Repository}} implements \mbox{\hyperlink{interface_game_1_1_i_repository}{I\+Repository}}.  
+
+
+Inheritance diagram for Game.\+Repository$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_repository}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_repository_a4e05519fae5c877e6903dcd1c9c1994a}{Repository}} (Db\+Context context)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_game_1_1_repository_a4e05519fae5c877e6903dcd1c9c1994a}{Repository$<$\+T$>$}} class. Constructor for \mbox{\hyperlink{class_game_1_1_repository}{Repository}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_repository_a2fe431d36160d7457344d6f8023b19d9}{Delete}} (T element)
+\begin{DoxyCompactList}\small\item\em Delete function. \end{DoxyCompactList}\item 
+I\+Queryable$<$ T $>$ \mbox{\hyperlink{class_game_1_1_repository_aea664d07612f5e08ceccd602a4b900da}{Get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Get\+All function. \end{DoxyCompactList}\item 
+abstract T \mbox{\hyperlink{class_game_1_1_repository_aa59d0df964f75cb36b0cf39e55bdb626}{Get\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Get\+By\+Id function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_repository_ae6382abbe87ee7fb27ff74103459b3ed}{Insert}} (T element)
+\begin{DoxyCompactList}\small\item\em Insert function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_repository_a798084f6c10a2603f2be991ef872b072}{Update}} (T element)
+\begin{DoxyCompactList}\small\item\em Update function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Db\+Context \mbox{\hyperlink{class_game_1_1_repository_a3cc410e05f93e5ccfb3fb3430b2898cb}{Context}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets Context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_game_1_1_repository}{Repository}} implements \mbox{\hyperlink{interface_game_1_1_i_repository}{I\+Repository}}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Generic type T.\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em class}]\end{description}
+\end{Desc}
+
+
+Definition at line 15 of file Repository.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_repository_a4e05519fae5c877e6903dcd1c9c1994a}\label{class_game_1_1_repository_a4e05519fae5c877e6903dcd1c9c1994a}} 
+\index{Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}!Repository@{Repository}}
+\index{Repository@{Repository}!Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}}
+\subsubsection{\texorpdfstring{Repository()}{Repository()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_repository}{Game.\+Repository}}$<$ T $>$.\mbox{\hyperlink{class_game_1_1_repository}{Repository}} (\begin{DoxyParamCaption}\item[{Db\+Context}]{context }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_game_1_1_repository_a4e05519fae5c877e6903dcd1c9c1994a}{Repository$<$\+T$>$}} class. Constructor for \mbox{\hyperlink{class_game_1_1_repository}{Repository}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & Db\+Context instance.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Repository.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_repository_a2fe431d36160d7457344d6f8023b19d9}\label{class_game_1_1_repository_a2fe431d36160d7457344d6f8023b19d9}} 
+\index{Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}!Delete@{Delete}}
+\index{Delete@{Delete}!Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_game_1_1_repository}{Game.\+Repository}}$<$ T $>$.Delete (\begin{DoxyParamCaption}\item[{T}]{element }\end{DoxyParamCaption})}
+
+
+
+Delete function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & T element.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_game_1_1_i_repository_a756ad6d919f5ae70d0800a63227b77a0}{Game.\+I\+Repository$<$ T $>$}}.
+
+
+
+Definition at line 48 of file Repository.\+cs.
+
+\mbox{\Hypertarget{class_game_1_1_repository_aea664d07612f5e08ceccd602a4b900da}\label{class_game_1_1_repository_aea664d07612f5e08ceccd602a4b900da}} 
+\index{Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}}
+\subsubsection{\texorpdfstring{GetAll()}{GetAll()}}
+{\footnotesize\ttfamily I\+Queryable$<$T$>$ \mbox{\hyperlink{class_game_1_1_repository}{Game.\+Repository}}$<$ T $>$.Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get\+All function. 
+
+\begin{DoxyReturn}{Returns}
+All the elements.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_game_1_1_i_repository_a92cb62ff8c11bfb4a4effc1c7fec7954}{Game.\+I\+Repository$<$ T $>$}}.
+
+
+
+Definition at line 63 of file Repository.\+cs.
+
+\mbox{\Hypertarget{class_game_1_1_repository_aa59d0df964f75cb36b0cf39e55bdb626}\label{class_game_1_1_repository_aa59d0df964f75cb36b0cf39e55bdb626}} 
+\index{Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}!GetById@{GetById}}
+\index{GetById@{GetById}!Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}}
+\subsubsection{\texorpdfstring{GetById()}{GetById()}}
+{\footnotesize\ttfamily abstract T \mbox{\hyperlink{class_game_1_1_repository}{Game.\+Repository}}$<$ T $>$.Get\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get\+By\+Id function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id as an integer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an element by id.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_game_1_1_i_repository_a83cea424c282f311a64d650dc3adfcc5}{Game.\+I\+Repository$<$ T $>$}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_scoreboard_item_repository_acd35ca45dedeb7e13634a08185f704e8}{Game.\+Scoreboard\+Item\+Repository}}.
+
+\mbox{\Hypertarget{class_game_1_1_repository_ae6382abbe87ee7fb27ff74103459b3ed}\label{class_game_1_1_repository_ae6382abbe87ee7fb27ff74103459b3ed}} 
+\index{Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}}
+\subsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_game_1_1_repository}{Game.\+Repository}}$<$ T $>$.Insert (\begin{DoxyParamCaption}\item[{T}]{element }\end{DoxyParamCaption})}
+
+
+
+Insert function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & element to insert.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_game_1_1_i_repository_a07afb17fde8c49eb4bfd61e031c4b76c}{Game.\+I\+Repository$<$ T $>$}}.
+
+
+
+Definition at line 79 of file Repository.\+cs.
+
+\mbox{\Hypertarget{class_game_1_1_repository_a798084f6c10a2603f2be991ef872b072}\label{class_game_1_1_repository_a798084f6c10a2603f2be991ef872b072}} 
+\index{Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}!Update@{Update}}
+\index{Update@{Update}!Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_game_1_1_repository}{Game.\+Repository}}$<$ T $>$.Update (\begin{DoxyParamCaption}\item[{T}]{element }\end{DoxyParamCaption})}
+
+
+
+Update function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & element to update.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_game_1_1_i_repository_a5482bc216e74fc42127e933df0e433c2}{Game.\+I\+Repository$<$ T $>$}}.
+
+
+
+Definition at line 94 of file Repository.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_game_1_1_repository_a3cc410e05f93e5ccfb3fb3430b2898cb}\label{class_game_1_1_repository_a3cc410e05f93e5ccfb3fb3430b2898cb}} 
+\index{Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}!Context@{Context}}
+\index{Context@{Context}!Game.Repository$<$ T $>$@{Game.Repository$<$ T $>$}}
+\subsubsection{\texorpdfstring{Context}{Context}}
+{\footnotesize\ttfamily Db\+Context \mbox{\hyperlink{class_game_1_1_repository}{Game.\+Repository}}$<$ T $>$.Context\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets Context. 
+
+
+
+Definition at line 37 of file Repository.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+oenik\+\_\+prog4\+\_\+2019\+\_\+1\+\_\+khupib\+\_\+r1dddp/\+Repository/Repository.\+cs\end{DoxyCompactItemize}

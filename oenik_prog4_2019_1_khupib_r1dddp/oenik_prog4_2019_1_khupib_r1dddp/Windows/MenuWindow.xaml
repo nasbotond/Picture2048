@@ -1,0 +1,24 @@
+﻿<Window x:Class="Game.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="350" Width="300"
+        Background="Black">
+    <Window.Resources>
+        <local:MenuViewModel x:Key="VM"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource VM}">
+        <Label Content="Menu" FontSize="18" HorizontalAlignment="Left" Margin="119,5,0,0" VerticalAlignment="Top" Height="32" Width="57" Foreground="Gold" RenderTransformOrigin="0.51,0.492"/>
+        <Button Content="Close Menu" Command="{Binding Path=CloseMenuCmd}" Click="CloseMenuClick" HorizontalAlignment="Left" Margin="50,240,0,0" VerticalAlignment="Top" Width="199" Background="Gold" Height="25"/>
+        <Button Content="New Game" Command="{Binding Path=NewGameCmd}" HorizontalAlignment="Left" Margin="50,40,0,0" VerticalAlignment="Top" Width="199" Background="Gold" Height="25"/>
+        <Button Content="Save Game" Click="SaveButtonClick" Command="{Binding Path=SaveGameCmd}" HorizontalAlignment="Left" Margin="50,80,0,0" VerticalAlignment="Top" Width="199" Background="Gold" Height="25"/>
+        <Button Content="Load Game" Click="LoadButtonClick" Command="{Binding Path=LoadGameCmd}" HorizontalAlignment="Left" Margin="50,120,0,0" VerticalAlignment="Top" Width="199" Background="Gold" Height="25" RenderTransformOrigin="0.494,-0.075"/>
+        <Button Content="Scoreboard" Command="{Binding Path=ViewScoreboardCmd}" Click="ScoreboardClick" HorizontalAlignment="Left" Margin="50,160,0,0" VerticalAlignment="Top" Width="199" Background="Gold" Height="25"/>
+        <Button Content="Exit Game" Command="{Binding Path=ExitGameCmd}"  HorizontalAlignment="Left" Margin="50,280,0,0" VerticalAlignment="Top" Width="199" Background="Gold" Height="25"/>
+        <Button Content="Rules" Command="{Binding Path=ViewRulesCmd}" Click="RulesClick" HorizontalAlignment="Left" Margin="50,200,0,0" VerticalAlignment="Top" Width="199" Background="Gold" Height="25"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="Game.RulesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game"
+        mc:Ignorable="d"
+        Title="RulesWindow" Height="300" Width="560
+        "
+        Background="Black">
+    <Window.Resources>
+        <local:RulesViewModel x:Key="VM"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource VM}">
+        <TextBlock HorizontalAlignment="Left" Margin="10,48,0,0" TextWrapping="Wrap" Text="{Binding Path=Rules}" VerticalAlignment="Top" Height="183" Width="260" Foreground="Gold"/>
+        <Button Content="Close" IsCancel="True" HorizontalAlignment="Left" Margin="240,236,0,10" Width="80" Background="Gold"/>
+        <Label Content="Rules" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Height="37" Width="274" Foreground="Gold" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Image Source="/tilesInProject/sorrendMandala.bmp" RenderOptions.BitmapScalingMode="HighQuality" Width="261" Height="221" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="280,10,0,0" />
+    </Grid>
+</Window>

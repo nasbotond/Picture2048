@@ -1,0 +1,148 @@
+\hypertarget{interface_game_1_1_i_repository}{}\section{Game.\+I\+Repository$<$ T $>$ Interface Template Reference}
+\label{interface_game_1_1_i_repository}\index{Game.IRepository$<$ T $>$@{Game.IRepository$<$ T $>$}}
+
+
+Interface \mbox{\hyperlink{interface_game_1_1_i_repository}{I\+Repository}}.  
+
+
+Inheritance diagram for Game.\+I\+Repository$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_game_1_1_i_repository}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_game_1_1_i_repository_a07afb17fde8c49eb4bfd61e031c4b76c}{Insert}} (T element)
+\begin{DoxyCompactList}\small\item\em Insertion of an element. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_game_1_1_i_repository_a756ad6d919f5ae70d0800a63227b77a0}{Delete}} (T element)
+\begin{DoxyCompactList}\small\item\em Delete an element. \end{DoxyCompactList}\item 
+I\+Queryable$<$ T $>$ \mbox{\hyperlink{interface_game_1_1_i_repository_a92cb62ff8c11bfb4a4effc1c7fec7954}{Get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Returns all elements. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{interface_game_1_1_i_repository_a83cea424c282f311a64d650dc3adfcc5}{Get\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em get element by id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_game_1_1_i_repository_a5482bc216e74fc42127e933df0e433c2}{Update}} (T element)
+\begin{DoxyCompactList}\small\item\em Update or change an element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface \mbox{\hyperlink{interface_game_1_1_i_repository}{I\+Repository}}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Generic type T.\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em class}]\end{description}
+\end{Desc}
+
+
+Definition at line 13 of file I\+Repository.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_game_1_1_i_repository_a756ad6d919f5ae70d0800a63227b77a0}\label{interface_game_1_1_i_repository_a756ad6d919f5ae70d0800a63227b77a0}} 
+\index{Game.IRepository$<$ T $>$@{Game.IRepository$<$ T $>$}!Delete@{Delete}}
+\index{Delete@{Delete}!Game.IRepository$<$ T $>$@{Game.IRepository$<$ T $>$}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interface_game_1_1_i_repository}{Game.\+I\+Repository}}$<$ T $>$.Delete (\begin{DoxyParamCaption}\item[{T}]{element }\end{DoxyParamCaption})}
+
+
+
+Delete an element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & deletes the element of type T.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_repository_a2fe431d36160d7457344d6f8023b19d9}{Game.\+Repository$<$ T $>$}}, and \mbox{\hyperlink{class_game_1_1_data_logic_a1a919012486b42981b057a6efdb1a188}{Game.\+Data\+Logic$<$ T $>$}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_repository_a92cb62ff8c11bfb4a4effc1c7fec7954}\label{interface_game_1_1_i_repository_a92cb62ff8c11bfb4a4effc1c7fec7954}} 
+\index{Game.IRepository$<$ T $>$@{Game.IRepository$<$ T $>$}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!Game.IRepository$<$ T $>$@{Game.IRepository$<$ T $>$}}
+\subsubsection{\texorpdfstring{GetAll()}{GetAll()}}
+{\footnotesize\ttfamily I\+Queryable$<$T$>$ \mbox{\hyperlink{interface_game_1_1_i_repository}{Game.\+I\+Repository}}$<$ T $>$.Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns all elements. 
+
+\begin{DoxyReturn}{Returns}
+Returns as an evaluable query.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_repository_aea664d07612f5e08ceccd602a4b900da}{Game.\+Repository$<$ T $>$}}, and \mbox{\hyperlink{class_game_1_1_data_logic_a24de2c5361397d7e477e043573df7ee4}{Game.\+Data\+Logic$<$ T $>$}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_repository_a83cea424c282f311a64d650dc3adfcc5}\label{interface_game_1_1_i_repository_a83cea424c282f311a64d650dc3adfcc5}} 
+\index{Game.IRepository$<$ T $>$@{Game.IRepository$<$ T $>$}!GetById@{GetById}}
+\index{GetById@{GetById}!Game.IRepository$<$ T $>$@{Game.IRepository$<$ T $>$}}
+\subsubsection{\texorpdfstring{GetById()}{GetById()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{interface_game_1_1_i_repository}{Game.\+I\+Repository}}$<$ T $>$.Get\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+get element by id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & takes an integer as a parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an element of type T.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_repository_aa59d0df964f75cb36b0cf39e55bdb626}{Game.\+Repository$<$ T $>$}}, and \mbox{\hyperlink{class_game_1_1_data_logic_ab414dd82a9450ffe7f6eb9c59b0bb191}{Game.\+Data\+Logic$<$ T $>$}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_repository_a07afb17fde8c49eb4bfd61e031c4b76c}\label{interface_game_1_1_i_repository_a07afb17fde8c49eb4bfd61e031c4b76c}} 
+\index{Game.IRepository$<$ T $>$@{Game.IRepository$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!Game.IRepository$<$ T $>$@{Game.IRepository$<$ T $>$}}
+\subsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interface_game_1_1_i_repository}{Game.\+I\+Repository}}$<$ T $>$.Insert (\begin{DoxyParamCaption}\item[{T}]{element }\end{DoxyParamCaption})}
+
+
+
+Insertion of an element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & inserts an element of type T.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_repository_ae6382abbe87ee7fb27ff74103459b3ed}{Game.\+Repository$<$ T $>$}}, and \mbox{\hyperlink{class_game_1_1_data_logic_ad8b9080bf8b772b0df540668d3052c84}{Game.\+Data\+Logic$<$ T $>$}}.
+
+\mbox{\Hypertarget{interface_game_1_1_i_repository_a5482bc216e74fc42127e933df0e433c2}\label{interface_game_1_1_i_repository_a5482bc216e74fc42127e933df0e433c2}} 
+\index{Game.IRepository$<$ T $>$@{Game.IRepository$<$ T $>$}!Update@{Update}}
+\index{Update@{Update}!Game.IRepository$<$ T $>$@{Game.IRepository$<$ T $>$}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interface_game_1_1_i_repository}{Game.\+I\+Repository}}$<$ T $>$.Update (\begin{DoxyParamCaption}\item[{T}]{element }\end{DoxyParamCaption})}
+
+
+
+Update or change an element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & updates the element of type T in the set.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_repository_a798084f6c10a2603f2be991ef872b072}{Game.\+Repository$<$ T $>$}}, and \mbox{\hyperlink{class_game_1_1_data_logic_a8264b0558379ab47f0c1715664781731}{Game.\+Data\+Logic$<$ T $>$}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+oenik\+\_\+prog4\+\_\+2019\+\_\+1\+\_\+khupib\+\_\+r1dddp/\+Interfaces/I\+Repository.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,21 @@
+﻿<Window x:Class="Game.GameOverWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game"
+        mc:Ignorable="d"
+        Title="GameOverWindow" Height="191.733" Width="300"
+        Background="Black">
+    <Window.Resources>
+        <local:GameOverViewModel x:Key="VM"/>
+        <local:GameModel x:Key="M"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource VM}">
+        <Label Content="GAME OVER!" HorizontalAlignment="Left" Margin="35,5,0,0" VerticalAlignment="Top" Height="47" Width="199" Foreground="Gold" FontSize="30"/>
+        <Button Content="New Game" Command="{Binding Path=NewGameCmd}" Click="ButtonClick" HorizontalAlignment="Left" Margin="35,102,0,0" VerticalAlignment="Top" Width="84" Background="Gold" Height="31"/>
+        <Button Content="Exit Game" Command="{Binding Path=ExitGameCmd}" Click="ButtonClick" HorizontalAlignment="Left" Margin="151,102,0,0" VerticalAlignment="Top" Width="83" Background="Gold" Height="31"/>
+        <TextBox x:Name="PlayerName" HorizontalAlignment="Left" Height="28" Margin="114,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="Black" Foreground="Gold" BorderBrush="Gold"/>
+        <Label Content="Enter Name:" HorizontalAlignment="Left" Margin="35,57,0,0" VerticalAlignment="Top" Height="28" Width="79" Foreground="Gold" FontSize="12.5"/>
+    </Grid>
+</Window>
